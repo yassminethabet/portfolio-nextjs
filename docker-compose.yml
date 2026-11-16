@@ -1,0 +1,8 @@
+services:
+  portfolio:
+    image: yasminethabet/portfolio-nextjs:${TAG:-v1}
+    build: .
+    container_name: portfolio-nextjs
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
